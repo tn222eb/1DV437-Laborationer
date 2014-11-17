@@ -1,0 +1,28 @@
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\Labb 1.exe
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\Labb 1.pdb
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\MonoGame.Framework.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.XAudio2.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.Direct3D11.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.DXGI.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.Direct2D1.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.XInput.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.RawInput.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.Direct3D9.dll
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\MonoGame.Framework.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.XAudio2.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.Direct3D11.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.DXGI.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.Direct2D1.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.XInput.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.RawInput.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\SharpDX.Direct3D9.xml
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\obj\x86\Debug\Labb 1.exe
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\obj\x86\Debug\Labb 1.pdb
+c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb 1\Labb 1\bin\Windows\Debug\Content\Black.png
+C:\Users\Tommy-dator\Documents\Visual Studio 2010\Projects\Labb 1\Labb 1\obj\x86\Debug\Labb 1.csprojResolveAssemblyReference.cache
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb1_Uppgift 1, 2 & 3\Labb 1\obj\x86\Debug\Labb 1.exe
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb1_Uppgift 1, 2 & 3\Labb 1\obj\x86\Debug\Labb 1.pdb
