@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("1DV437_Laboration_2_SplitterGravity")]
-[assembly: AssemblyProduct("1DV437_Laboration_2_SplitterGravity")]
+[assembly: AssemblyTitle("2DAnimation")]
+[assembly: AssemblyProduct("2DAnimation")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("07cb8155-af98-4195-9c8c-6e3deeb0bf35")]
+[assembly: Guid("704c3f3f-30a0-4314-a4dc-1177674610ae")]
 
 // Version information for an assembly consists of the following four values:
 //

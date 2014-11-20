@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace _1DV437_Laboration_2_Smoke
+namespace _2DAnimation
 {
     /// <summary>
     /// This is the main type for your game
@@ -11,9 +11,8 @@ namespace _1DV437_Laboration_2_Smoke
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        private Texture2D m_splitterTexture;
-        private SplitterSystem m_splitterSystem;
-        private Camera m_camera;
+        View m_view;
+        Texture2D m_texture;
 
         public Game1()
             : base()
@@ -45,9 +44,9 @@ namespace _1DV437_Laboration_2_Smoke
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            m_splitterTexture = Content.Load<Texture2D>("explosion");
-            m_splitterSystem = new SplitterSystem();
-            m_camera = new Camera(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
+           
+            m_texture = Content.Load<Texture2D>("explosion");
+            m_view = new View(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height, spriteBatch, m_texture);
         }
 
         /// <summary>
@@ -70,8 +69,6 @@ namespace _1DV437_Laboration_2_Smoke
                 Exit();
 
             // TODO: Add your update logic here
-            m_splitterSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
-
             base.Update(gameTime);
         }
 
@@ -81,12 +78,13 @@ namespace _1DV437_Laboration_2_Smoke
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.White);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            float elapsedTime = (float)gameTime.TotalGameTime.TotalSeconds;
+            m_view.Draw(elapsedTime);
 
             base.Draw(gameTime);
-            m_splitterSystem.Draw(spriteBatch, m_splitterTexture, m_camera);
         }
     }
 }

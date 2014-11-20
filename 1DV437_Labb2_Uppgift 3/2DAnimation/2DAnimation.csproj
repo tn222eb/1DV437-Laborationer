@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6FA67967-5F13-4F07-BBBD-FBCF244AC1F7}</ProjectGuid>
+    <ProjectGuid>{D7D3E8E8-2238-4A45-9049-2E7B5E3171EC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_1DV437_Laboration_2_Smoke</RootNamespace>
-    <AssemblyName>1DV437_Laboration_2_Smoke</AssemblyName>
+    <RootNamespace>_2DAnimation</RootNamespace>
+    <AssemblyName>2DAnimation</AssemblyName>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -35,13 +35,11 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Camera.cs" />
     <Compile Include="Game1.cs" />
-    <Compile Include="Level.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SplitterParticle.cs" />
-    <Compile Include="SplitterSystem.cs" />
+    <Compile Include="View.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 #endregion
 
-namespace _1DV437_Laboration_2_Smoke
+namespace _2DAnimation
 {
 #if WINDOWS || LINUX
     /// <summary>
