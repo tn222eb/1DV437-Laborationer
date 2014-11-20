@@ -26,7 +26,7 @@ namespace _1DV437_Laboration_2_Smoke
             this.m_splitterVelocity = velocity;
             this.MAX_TIME = MAX_TIME;
             m_splitterPosition = new Vector2(0.5f, 1.0f);
-            m_acceleration = new Vector2(0, -1.6f);
+            m_acceleration = new Vector2(-0.8f, -1.6f);
             m_delayTimeSeconds = delayTimeSeconds;
         }
 

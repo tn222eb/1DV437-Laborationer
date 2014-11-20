@@ -45,7 +45,7 @@ namespace _1DV437_Laboration_2_Smoke
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            m_splitterTexture = Content.Load<Texture2D>("particlesmoke");
+            m_splitterTexture = Content.Load<Texture2D>("explosion");
             m_splitterSystem = new SplitterSystem();
             m_camera = new Camera(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
         }

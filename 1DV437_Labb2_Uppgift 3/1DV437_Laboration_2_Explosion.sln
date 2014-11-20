@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1DV437_Laboration_2_Smoke", "1DV437_Laboration_2_SplitterGravity\1DV437_Laboration_2_Smoke.csproj", "{6FA67967-5F13-4F07-BBBD-FBCF244AC1F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1DV437_Laboration_3_Explosion", "1DV437_Laboration_2_SplitterGravity\1DV437_Laboration_3_Explosion.csproj", "{6FA67967-5F13-4F07-BBBD-FBCF244AC1F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

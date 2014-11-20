@@ -36,6 +36,10 @@ namespace Labb_1.View
             return new Vector2(visualCoordinateX, visualCoordinateY);
         }
 
+        // 512, 512
+        // 128, 512 
+        // 384, 64 
+        // 64, 64
         public Vector2 RotateLogicalCoordinate(Vector2 logicalCoordinate) {
             float logicalCoordinateX = Model.Level.SIZE_X - logicalCoordinate.X;
             float logicalCoordinateY = Model.Level.SIZE_Y - logicalCoordinate.Y;
