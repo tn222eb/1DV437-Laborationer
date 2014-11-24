@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6FA67967-5F13-4F07-BBBD-FBCF244AC1F7}</ProjectGuid>
+    <ProjectGuid>{CBB149BC-4D1E-4811-A91D-790A1CE8ECCE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_1DV437_Laboration_2_Smoke</RootNamespace>
-    <AssemblyName>1DV437_Laboration_2_Smoke</AssemblyName>
+    <RootNamespace>Smoke</RootNamespace>
+    <AssemblyName>Smoke</AssemblyName>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -35,13 +35,12 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Camera.cs" />
     <Compile Include="Game1.cs" />
-    <Compile Include="Level.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SplitterParticle.cs" />
-    <Compile Include="SplitterSystem.cs" />
+    <Compile Include="View\Camera.cs" />
+    <Compile Include="View\SmokeParticle.cs" />
+    <Compile Include="View\SmokeSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
@@ -51,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\particlesmoke.png">
+    <Content Include="Content\smoke.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Icon.ico" />

@@ -1,8 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Smoke.View;
 
-namespace _1DV437_Laboration_2_Smoke
+namespace Smoke
 {
     /// <summary>
     /// This is the main type for your game
@@ -11,9 +12,9 @@ namespace _1DV437_Laboration_2_Smoke
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        private Texture2D m_splitterTexture;
-        private SplitterSystem m_splitterSystem;
-        private Camera m_camera;
+        Texture2D smokeTexture;
+        SmokeSystem smokeSystem;
+        Camera camera;
 
         public Game1()
             : base()
@@ -30,8 +31,11 @@ namespace _1DV437_Laboration_2_Smoke
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
 
+            smokeSystem = new SmokeSystem();
+
+            // TODO: Add your initialization logic here
+            camera = new Camera(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
             base.Initialize();
         }
 
@@ -45,9 +49,7 @@ namespace _1DV437_Laboration_2_Smoke
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            m_splitterTexture = Content.Load<Texture2D>("particlesmoke");
-            m_splitterSystem = new SplitterSystem();
-            m_camera = new Camera(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
+            smokeTexture = Content.Load<Texture2D>("smoke");
         }
 
         /// <summary>
@@ -70,8 +72,7 @@ namespace _1DV437_Laboration_2_Smoke
                 Exit();
 
             // TODO: Add your update logic here
-            m_splitterSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
-
+            smokeSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             base.Update(gameTime);
         }
 
@@ -84,9 +85,9 @@ namespace _1DV437_Laboration_2_Smoke
             GraphicsDevice.Clear(Color.White);
 
             // TODO: Add your drawing code here
+            smokeSystem.Draw(spriteBatch, smokeTexture, camera);
 
             base.Draw(gameTime);
-            m_splitterSystem.Draw(spriteBatch, m_splitterTexture, m_camera);
         }
     }
 }

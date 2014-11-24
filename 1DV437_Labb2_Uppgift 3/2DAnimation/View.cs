@@ -13,7 +13,6 @@ namespace _2DAnimation
         private int numFramesX = 4;
         private SpriteBatch spriteBatch;
         private Texture2D texture;
-        private int frameSize = 128;
 
         public View(int width, int height, SpriteBatch spritebatch, Texture2D texture)
         {
@@ -25,6 +24,8 @@ namespace _2DAnimation
              int frame = model.Update(elapsedTime);
              float frameX = frame % numFramesX;
              float frameY = frame / numFramesX;
+
+             int frameSize = texture.Width / 4;
 
              int visualFrameX = (int)frameX * frameSize;
              int visualFrameY = (int)frameY * frameSize;

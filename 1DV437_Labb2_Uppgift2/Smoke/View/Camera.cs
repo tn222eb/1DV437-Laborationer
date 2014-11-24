@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
 
-namespace _1DV437_Laboration_2_Smoke
+namespace Smoke.View
 {
     class Camera
     {
@@ -12,23 +11,30 @@ namespace _1DV437_Laboration_2_Smoke
 
         public Camera(int width, int height)
         {
-            int scaleX = width / (int)Level.SIZE_X;
-            int scaleY = height / (int)Level.SIZE_Y;
-            scale = scaleX;
+            int scaleX = width;
+            int scaleY = height;
 
+            scale = scaleX;
             if (scaleY < scaleX)
             {
                 scale = scaleY;
             }
         }
 
-        public float ToVisualX(float x) {
-            return x * scale;
-        }
-
         public float ToVisualY(float y)
         {
-            return y * scale;
+            return scale * y;
+        }
+
+
+        public float ToVisualX(float x)
+        {
+            return scale * x;
+        }
+
+        public float GetScale()
+        {
+            return scale;
         }
     }
 }
