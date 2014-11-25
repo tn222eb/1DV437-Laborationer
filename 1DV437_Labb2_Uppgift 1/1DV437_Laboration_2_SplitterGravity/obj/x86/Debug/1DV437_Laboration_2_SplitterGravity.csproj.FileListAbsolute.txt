@@ -26,3 +26,27 @@ c:\users\tommy-dator\documents\visual studio 2010\Projects\1DV437_Laboration_2_S
 c:\users\tommy-dator\documents\visual studio 2010\Projects\1DV437_Laboration_2_SplitterGravity\1DV437_Laboration_2_SplitterGravity\obj\x86\Debug\1DV437_Laboration_2_SplitterGravity.pdb
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\obj\x86\Debug\1DV437_Laboration_2_SplitterGravity.exe
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\obj\x86\Debug\1DV437_Laboration_2_SplitterGravity.pdb
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\Content\spark.png
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\1DV437_Laboration_2_SplitterGravity.exe
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\1DV437_Laboration_2_SplitterGravity.pdb
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\1DV437_Labb2_Uppgift 1\1DV437_Laboration_2_SplitterGravity\obj\x86\Debug\1DV437_Laboration_2_SplitterGravity.csprojResolveAssemblyReference.cache

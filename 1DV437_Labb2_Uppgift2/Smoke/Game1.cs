@@ -21,6 +21,9 @@ namespace Smoke
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            graphics.PreferredBackBufferWidth = 400;
+            graphics.PreferredBackBufferHeight = 400;
         }
 
         /// <summary>

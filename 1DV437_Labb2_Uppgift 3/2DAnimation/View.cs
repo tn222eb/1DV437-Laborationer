@@ -30,7 +30,7 @@ namespace _2DAnimation
              int visualFrameX = (int)frameX * frameSize;
              int visualFrameY = (int)frameY * frameSize;
 
-             Rectangle destinationRectangle = new Rectangle(0, 0, 120, 120);
+             Rectangle destinationRectangle = new Rectangle(120, 120, 120, 120);
              Rectangle sourceRectangle = new Rectangle(visualFrameX , visualFrameY, frameSize, frameSize);
 
              spriteBatch.Begin();
