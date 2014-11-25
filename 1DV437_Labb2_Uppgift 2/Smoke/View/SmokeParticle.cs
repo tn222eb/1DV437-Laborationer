@@ -47,7 +47,7 @@ namespace Smoke.View
             position = new Vector2(0.5f, 1f);
 
             size = 0;
-
+            
             Random random = new Random();
             velocity = new Vector2(((float)random.NextDouble() - 0.5f), ((float)random.NextDouble() - 0.5f));
             velocity.Normalize();
