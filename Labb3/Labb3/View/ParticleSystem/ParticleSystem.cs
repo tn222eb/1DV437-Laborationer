@@ -21,18 +21,16 @@ namespace Labb3.View.ParticleSystem
         Camera camera;
         private ExplosionParticle explosionParticle;
 
-        public ParticleSystem(ContentManager content, Camera camera)
+        public ParticleSystem(ContentManager content, Camera camera, Vector2 mousePosition)
         {
             this.explosionTexture = content.Load<Texture2D>("explosion");
             this.splitterTexture = content.Load<Texture2D>("spark");
             this.smokeTexture = content.Load<Texture2D>("smoke");
             this.camera = camera;
 
-            Vector2 vector = new Vector2(0.5f, 0.5f);
-
-            smokeSystem = new SmokeSystem(vector);
-            explosionParticle = new ExplosionParticle(vector);
-            splitterSystem = new SplitterSystem(vector);
+            smokeSystem = new SmokeSystem(mousePosition);
+            explosionParticle = new ExplosionParticle(mousePosition);
+            splitterSystem = new SplitterSystem(mousePosition);
         }
 
         public void Update(float elapsedTime)

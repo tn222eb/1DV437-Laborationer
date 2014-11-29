@@ -42,7 +42,7 @@ namespace Labb3.View
         }
 
         // http://stackoverflow.com/questions/2795741/displaying-rectangles-in-game-window-with-xna
-        internal void DrawLevel()
+        internal void DrawBorder()
         {
             int visualX = (int)m_camera.ToVisualX(BallSimulation.LEVEL_SIZE_X);
             int visualY = (int)m_camera.ToVisualY(BallSimulation.LEVEL_SIZE_Y);
@@ -50,18 +50,17 @@ namespace Labb3.View
             m_spriteBatch.Begin();
 
             Rectangle destinationRectangle = new Rectangle(0, 0, visualX, visualY);
-            m_spriteBatch.Draw(m_backgroundTexture, destinationRectangle, Color.White);
 
             int borderWidth = m_camera.GetBorderWidth();
 
             // Ritar ut vänster sidan av ram
-            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Top, borderWidth, destinationRectangle.Height), Color.White);
+            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Top, borderWidth, destinationRectangle.Height), Color.Gray);
             // Ritar ut höger av ram                               
-            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Right, destinationRectangle.Top, borderWidth, destinationRectangle.Height), Color.White);
+            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Right, destinationRectangle.Top, borderWidth, destinationRectangle.Height), Color.Gray);
             // Ritar ut yttersta av ram
-            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Top, destinationRectangle.Width, borderWidth), Color.White);
+            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Top, destinationRectangle.Width, borderWidth), Color.Gray);
             // Ritar ut nedersta av ram                      
-            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Bottom - borderWidth, destinationRectangle.Width, borderWidth), Color.White);
+            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Bottom, destinationRectangle.Width, borderWidth), Color.Gray);
 
             m_spriteBatch.End();
         }

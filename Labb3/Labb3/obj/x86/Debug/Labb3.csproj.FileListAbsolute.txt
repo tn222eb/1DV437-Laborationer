@@ -28,3 +28,33 @@ c:\users\tommy-dator\documents\visual studio 2010\Projects\Labb3\Labb3\bin\Windo
 C:\Users\Tommy-dator\documents\visual studio 2010\Projects\Labb3\Labb3\bin\Windows\Debug\Content\explosion.png
 C:\Users\Tommy-dator\documents\visual studio 2010\Projects\Labb3\Labb3\bin\Windows\Debug\Content\smoke.png
 C:\Users\Tommy-dator\documents\visual studio 2010\Projects\Labb3\Labb3\bin\Windows\Debug\Content\spark.png
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.exe
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.pdb
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\Background.png
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\Ball.png
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\explosion.png
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\smoke.png
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\spark.png
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Labb3.exe
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Labb3.pdb
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.csprojResolveAssemblyReference.cache

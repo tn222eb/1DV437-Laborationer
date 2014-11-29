@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using Labb3.View;
 using Labb3.Model;
 using Labb3.View.ParticleSystem;
+using Labb3.Controller;
 
 namespace Labb3
 {
@@ -14,9 +15,8 @@ namespace Labb3
     {
         BallView m_ballView;
         BallSimulation m_ballSimulation;
-        ParticleSystem particleSystem;
-        Camera camera;
-
+        Camera m_camera;
+        GameController m_gameController;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
@@ -27,6 +27,8 @@ namespace Labb3
             graphics.PreferredBackBufferHeight = 400;
             graphics.PreferredBackBufferWidth = 400;
             Content.RootDirectory = "Content";
+
+            IsMouseVisible = true;
         }
 
         /// <summary>
@@ -38,9 +40,6 @@ namespace Labb3
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            camera = new Camera(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
-            particleSystem = new ParticleSystem(Content, camera);
-
             base.Initialize();
         }
 
@@ -59,9 +58,10 @@ namespace Labb3
             Texture2D border = new Texture2D(GraphicsDevice, 1, 1);
             border.SetData(new[] { Color.White });
 
-
+            this.m_camera = new Camera(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
             this.m_ballSimulation = new BallSimulation();
-            this.m_ballView = new BallView(m_ballSimulation, spriteBatch, backgroundTexture, ballTexture, border, camera);
+            this.m_ballView = new BallView(m_ballSimulation, spriteBatch, backgroundTexture, ballTexture, border, m_camera);
+            this.m_gameController = new GameController(m_camera, Content);
         }
 
         /// <summary>
@@ -85,9 +85,11 @@ namespace Labb3
 
             // TODO: Add your update logic here
             float timeElapsedSeconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            particleSystem.Update(timeElapsedSeconds);
+
+            m_gameController.Update(timeElapsedSeconds);
             m_ballSimulation.Update(timeElapsedSeconds);
 
+            base.Update(gameTime);
         }
 
         /// <summary>
@@ -96,14 +98,13 @@ namespace Labb3
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.AntiqueWhite);
 
             // TODO: Add your drawing code here
-            m_ballView.DrawLevel();
-            m_ballView.DrawBall();
-            particleSystem.Draw(spriteBatch);
+            m_gameController.Draw(spriteBatch);
+            m_ballView.DrawBorder();
+            //m_ballView.DrawBall();
             
-
             base.Draw(gameTime);
         }
     }

@@ -42,5 +42,15 @@ namespace Labb3.View
         {
             return this.m_borderWidth;
         }
+
+        internal float ToModelY(float visualY)
+        {
+            return (visualY - m_borderWidth) / m_scale;
+        }
+
+        internal float ToModelX(float visualX)
+        {
+            return (visualX - m_borderWidth) / m_scale;
+        }
     }
 }
