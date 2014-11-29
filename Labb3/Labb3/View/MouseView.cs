@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Labb3.View
 {
@@ -14,6 +15,15 @@ namespace Labb3.View
 
         public MouseView(Camera camera) {
             this.camera = camera;
+        }
+
+        public void DrawMouseAimCircle(SpriteBatch spriteBatch, Texture2D aimCircleTexture, float mouseDiameter) {
+            int mouseArea = (int)(mouseDiameter * camera.GetScale());
+            Rectangle destinationRectangle = new Rectangle(currentMouseState.X - mouseArea / 2, currentMouseState.Y - mouseArea / 2, mouseArea, mouseArea);
+            
+            spriteBatch.Begin();
+            spriteBatch.Draw(aimCircleTexture, destinationRectangle, Color.White);
+            spriteBatch.End();
         }
 
         public bool DidUserPressButton() {

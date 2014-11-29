@@ -30,7 +30,6 @@ C:\Users\Tommy-dator\documents\visual studio 2010\Projects\Labb3\Labb3\bin\Windo
 C:\Users\Tommy-dator\documents\visual studio 2010\Projects\Labb3\Labb3\bin\Windows\Debug\Content\spark.png
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.exe
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.pdb
-C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\Background.png
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\Ball.png
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\explosion.png
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\smoke.png
@@ -58,3 +57,5 @@ C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\L
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.csprojResolveAssemblyReference.cache
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\fire.xnb
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\Content\aimCircle.png

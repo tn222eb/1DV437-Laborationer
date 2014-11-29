@@ -10,7 +10,13 @@ namespace Labb3.Model
         public const float LEVEL_SIZE_X = 1.0f;
         public const float LEVEL_SIZE_Y = 1.0f;
 
+        private float m_mouseArea = 0.2f;
+
         private Ball m_ball = new Ball();
+
+        internal float GetMouseArea() {
+            return m_mouseArea;
+        }
 
         internal void Update(float TimeElapsedSeconds)
         {

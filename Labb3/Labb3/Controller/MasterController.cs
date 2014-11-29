@@ -53,15 +53,14 @@ namespace Labb3
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            Texture2D backgroundTexture = Content.Load<Texture2D>("Background");
             Texture2D ballTexture = Content.Load<Texture2D>("Ball");
             Texture2D border = new Texture2D(GraphicsDevice, 1, 1);
             border.SetData(new[] { Color.White });
 
             this.m_camera = new Camera(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
             this.m_ballSimulation = new BallSimulation();
-            this.m_ballView = new BallView(m_ballSimulation, spriteBatch, backgroundTexture, ballTexture, border, m_camera);
-            this.m_gameController = new GameController(m_camera, Content);
+            this.m_ballView = new BallView(m_ballSimulation, spriteBatch, ballTexture, border, m_camera);
+            this.m_gameController = new GameController(m_camera, Content, m_ballSimulation);
         }
 
         /// <summary>
