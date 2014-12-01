@@ -15,12 +15,17 @@ namespace Labb3.Model
         private float m_speedY;
         private float m_speedX;
 
-        public Ball(float centerX, float centerY, float speedX, float speedY) {
+        public Ball(int i ) {
             this.m_isAlive = true;
-            this.m_centerX = centerX;
-            this.m_centerY = centerY;
-            this.m_speedX = speedX;
-            this.m_speedY = speedY;
+
+            Random rand = new Random(i);
+
+            this.m_centerX = (float)rand.NextDouble() * 0.8f + 0.1f;
+            this.m_centerY = (float)rand.NextDouble() * 0.8f + 0.1f;
+
+            this.m_speedX = (float)rand.NextDouble() * 0.8f + 0.2f;
+            this.m_speedY = (float)rand.NextDouble() * 0.8f + 0.2f;
+
         }
 
         public Vector2 GetBallPosition() {

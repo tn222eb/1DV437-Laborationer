@@ -12,7 +12,6 @@ namespace Labb3.Model
         public const float LEVEL_SIZE_X = 1.0f;
         public const float LEVEL_SIZE_Y = 1.0f;
         public const int NUM_BALLS = 10;
-
         private float m_mouseArea = 0.3f;
         private List<Ball> m_ballList;
 
@@ -23,13 +22,7 @@ namespace Labb3.Model
 
             for (int i = 0; i < NUM_BALLS; i++)
             {
-                float centerX = (float)rand.NextDouble() * 0.9f + 0.1f;
-                float centerY = (float)rand.NextDouble() * 0.9f + 0.1f;
-
-                float speedX = (float)rand.NextDouble() * 0.8f + 0.2f;
-                float speedY = (float)rand.NextDouble() * 0.8f + 0.2f;
-
-                m_ballList.Add(new Ball(centerX, centerY, speedX, speedY));
+                m_ballList.Add(new Ball(i));
             }
         }
 

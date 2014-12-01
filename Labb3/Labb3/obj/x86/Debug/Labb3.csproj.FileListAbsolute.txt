@@ -59,3 +59,4 @@ C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\L
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.exe
 C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.pdb
+C:\Users\Tommy-dator\Documents\GitHub\-1DV437--Grundlaggande_Spelprogrammering\Labb3\Labb3\obj\x86\Debug\Labb3.csprojResolveAssemblyReference.cache
