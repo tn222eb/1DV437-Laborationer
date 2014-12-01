@@ -45,7 +45,7 @@ namespace Labb3.Controller
 
                 m_particles.Add(new ParticleSystem(m_content, m_camera, mouseModelPosition));
                 m_fireSoundEffect.Play();
-                
+                m_ballSimulation.BallInsideMouseArea(mouseModelPosition);
             }
 
             foreach (ParticleSystem particle in m_particles) {
@@ -56,7 +56,6 @@ namespace Labb3.Controller
         public void Draw(SpriteBatch spriteBatch)
         {
             m_mouseView.DrawMouseAimCircle(spriteBatch, m_aimCircleTexture, m_ballSimulation.GetMouseArea());
-
 
             foreach (ParticleSystem particle in m_particles)
             {

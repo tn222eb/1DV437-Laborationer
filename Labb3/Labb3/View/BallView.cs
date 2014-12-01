@@ -13,28 +13,36 @@ namespace Labb3.View
         private Camera m_camera;
         private BallSimulation m_ballSimulation;
         private SpriteBatch m_spriteBatch;
-        private Texture2D m_backgroundTexture;
         private Texture2D m_ballTexture;
         private Texture2D m_border;
+        private Texture2D m_aliveBallTexture;
+        private Texture2D m_deadBallTexture;
 
-        public BallView(BallSimulation ballSimulation, SpriteBatch spriteBatch, Texture2D backgroundTexture, Texture2D ballTexture, Texture2D border, Camera camera)
+        public BallView(BallSimulation ballSimulation, SpriteBatch spriteBatch, Texture2D ballTexture, Texture2D border, Camera camera, Texture2D deadBallTexture)
         {
             this.m_ballSimulation = ballSimulation;
             this.m_spriteBatch = spriteBatch;
-            this.m_backgroundTexture = backgroundTexture;
-            this.m_ballTexture = ballTexture;
+            this.m_aliveBallTexture = ballTexture;
+            this.m_deadBallTexture = deadBallTexture;
             this.m_border = border;
 
             this.m_camera = camera;
         }
 
-        internal void DrawBall()
+        internal void DrawBall(float centerX, float centerY, float ballDiamater, bool isAlive)
         {
-            int visualX = (int)m_camera.ToVisualX(m_ballSimulation.GetBallXPosition());
-            int visualY = (int)m_camera.ToVisualY(m_ballSimulation.GetBallYPosition());
-            int vBallSize = (int)(m_ballSimulation.GetBallDiamater() * m_camera.GetScale());
+            int visualX = (int)m_camera.ToVisualX(centerX);
+            int visualY = (int)m_camera.ToVisualY(centerY);
+            int vBallSize = (int)(ballDiamater * m_camera.GetScale());
 
             Rectangle destinationRectangle = new Rectangle(visualX - (vBallSize / 2), visualY - (vBallSize / 2), vBallSize, vBallSize);
+
+            m_ballTexture = m_aliveBallTexture;
+
+            if (!isAlive)
+            {
+                m_ballTexture = m_deadBallTexture;
+            }
 
             m_spriteBatch.Begin();
             m_spriteBatch.Draw(m_ballTexture, destinationRectangle, Color.White);
@@ -54,13 +62,13 @@ namespace Labb3.View
             int borderWidth = m_camera.GetBorderWidth();
 
             // Ritar ut vänster sidan av ram
-            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Top, borderWidth, destinationRectangle.Height), Color.Gray);
+            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Top, borderWidth, destinationRectangle.Height), Color.Black);
             // Ritar ut höger av ram                               
-            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Right, destinationRectangle.Top, borderWidth, destinationRectangle.Height), Color.Gray);
+            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Right, destinationRectangle.Top, borderWidth, destinationRectangle.Height), Color.Black);
             // Ritar ut yttersta av ram
-            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Top, destinationRectangle.Width, borderWidth), Color.Gray);
+            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Top, destinationRectangle.Width, borderWidth), Color.Black);
             // Ritar ut nedersta av ram                      
-            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Bottom, destinationRectangle.Width, borderWidth), Color.Gray);
+            m_spriteBatch.Draw(m_border, new Rectangle(destinationRectangle.Left, destinationRectangle.Bottom, destinationRectangle.Width, borderWidth), Color.Black);
 
             m_spriteBatch.End();
         }

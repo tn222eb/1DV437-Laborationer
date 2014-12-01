@@ -17,9 +17,9 @@ namespace Labb3.View
             this.camera = camera;
         }
 
-        public void DrawMouseAimCircle(SpriteBatch spriteBatch, Texture2D aimCircleTexture, float mouseDiameter) {
-            int mouseArea = (int)(mouseDiameter * camera.GetScale());
-            Rectangle destinationRectangle = new Rectangle(currentMouseState.X - mouseArea / 2, currentMouseState.Y - mouseArea / 2, mouseArea, mouseArea);
+        public void DrawMouseAimCircle(SpriteBatch spriteBatch, Texture2D aimCircleTexture, float mouseArea) {
+            int visualSize = (int)(mouseArea * camera.GetScale());
+            Rectangle destinationRectangle = new Rectangle(currentMouseState.X - visualSize / 2, currentMouseState.Y - visualSize / 2, visualSize, visualSize);
             
             spriteBatch.Begin();
             spriteBatch.Draw(aimCircleTexture, destinationRectangle, Color.White);

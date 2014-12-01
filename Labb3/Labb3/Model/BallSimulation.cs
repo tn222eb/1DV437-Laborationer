@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections.ObjectModel;
+using Microsoft.Xna.Framework;
 
 namespace Labb3.Model
 {
@@ -9,56 +11,82 @@ namespace Labb3.Model
     {
         public const float LEVEL_SIZE_X = 1.0f;
         public const float LEVEL_SIZE_Y = 1.0f;
+        public const int NUM_BALLS = 10;
 
-        private float m_mouseArea = 0.2f;
+        private float m_mouseArea = 0.3f;
+        private List<Ball> m_ballList;
 
-        private Ball m_ball = new Ball();
+        public BallSimulation()
+        {
+            m_ballList = new List<Ball>();
+            Random rand = new Random();
 
-        internal float GetMouseArea() {
+            for (int i = 0; i < NUM_BALLS; i++)
+            {
+                float centerX = (float)rand.NextDouble() * 0.9f + 0.1f;
+                float centerY = (float)rand.NextDouble() * 0.9f + 0.1f;
+
+                float speedX = (float)rand.NextDouble() * 0.8f + 0.2f;
+                float speedY = (float)rand.NextDouble() * 0.8f + 0.2f;
+
+                m_ballList.Add(new Ball(centerX, centerY, speedX, speedY));
+            }
+        }
+
+        public List<Ball> getBallList() {
+            return m_ballList;
+        }
+
+        internal void BallInsideMouseArea(Vector2 mousePosition)
+        {
+            foreach (var ball in m_ballList)
+            {
+                if (ball.IsAlive)
+                {
+                    if (Vector2.Distance(mousePosition, ball.GetBallPosition()) < m_mouseArea / 2)
+                    {
+                        ball.IsAlive = false;
+                    }
+                }
+            }
+        }
+
+        internal float GetMouseArea()
+        {
             return m_mouseArea;
         }
 
-        internal void Update(float TimeElapsedSeconds)
+        internal void Update(float timeElapsedSeconds)
         {
-            m_ball.m_centerX += m_ball.m_speedX * TimeElapsedSeconds;
-
-            if (m_ball.m_centerX + (m_ball.m_diameter / 2) > LEVEL_SIZE_X)
+            foreach (Ball ball in m_ballList)
             {
-                m_ball.m_speedX = m_ball.m_speedX * -1.0f;
+                if (ball.IsAlive)
+                {
+                    ball.CenterX += ball.SpeedX * timeElapsedSeconds;
+
+                    if (ball.CenterX + (ball.Diamater / 2) > LEVEL_SIZE_X)
+                    {
+                        ball.SpeedX = ball.SpeedX * -1.0f;
+                    }
+
+                    if (ball.CenterX - (ball.Diamater / 2) < 0)
+                    {
+                        ball.SpeedX = ball.SpeedX * -1.0f;
+                    }
+
+                    ball.CenterY += ball.SpeedY * timeElapsedSeconds;
+
+                    if (ball.CenterY + (ball.Diamater / 2) > LEVEL_SIZE_Y)
+                    {
+                        ball.SpeedY = ball.SpeedY * -1.0f;
+                    }
+
+                    if (ball.CenterY - (ball.Diamater / 2) < 0)
+                    {
+                        ball.SpeedY = ball.SpeedY * -1.0f;
+                    }
+                }
             }
-
-            if (m_ball.m_centerX - (m_ball.m_diameter / 2) < 0)
-            {
-                m_ball.m_speedX = m_ball.m_speedX * -1.0f;
-            }
-
-            m_ball.m_centerY += m_ball.m_speedY * TimeElapsedSeconds;
-
-            if (m_ball.m_centerY + (m_ball.m_diameter / 2) > LEVEL_SIZE_Y)
-            {
-                m_ball.m_speedY = m_ball.m_speedY * -1.0f;
-            }
-
-            if (m_ball.m_centerY - (m_ball.m_diameter / 2) < 0)
-            {
-                m_ball.m_speedY = m_ball.m_speedY * -1.0f;
-            }
-
-        }
-
-        internal float GetBallXPosition()
-        {
-            return m_ball.m_centerX;
-        }
-
-        internal float GetBallYPosition()
-        {
-            return m_ball.m_centerY;
-        }
-
-        internal float GetBallDiamater()
-        {
-            return m_ball.m_diameter;
         }
     }
 }

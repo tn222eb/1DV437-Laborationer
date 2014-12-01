@@ -53,13 +53,14 @@ namespace Labb3
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            Texture2D ballTexture = Content.Load<Texture2D>("Ball");
+            Texture2D ballTexture = Content.Load<Texture2D>("Ball2");
+            Texture2D deadBallTexture = Content.Load<Texture2D>("DeadBall2");
             Texture2D border = new Texture2D(GraphicsDevice, 1, 1);
             border.SetData(new[] { Color.White });
 
             this.m_camera = new Camera(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
             this.m_ballSimulation = new BallSimulation();
-            this.m_ballView = new BallView(m_ballSimulation, spriteBatch, ballTexture, border, m_camera);
+            this.m_ballView = new BallView(m_ballSimulation, spriteBatch, ballTexture, border, m_camera, deadBallTexture);
             this.m_gameController = new GameController(m_camera, Content, m_ballSimulation);
         }
 
@@ -97,12 +98,16 @@ namespace Labb3
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.AntiqueWhite);
+            GraphicsDevice.Clear(Color.Gray);
 
             // TODO: Add your drawing code here
             m_gameController.Draw(spriteBatch);
             m_ballView.DrawBorder();
-            //m_ballView.DrawBall();
+
+            foreach (var ball in m_ballSimulation.getBallList())
+            {
+                m_ballView.DrawBall(ball.CenterX, ball.CenterY, ball.Diamater, ball.IsAlive);
+            }
             
             base.Draw(gameTime);
         }
